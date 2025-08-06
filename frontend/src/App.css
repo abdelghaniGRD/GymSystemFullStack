@@ -1,0 +1,343 @@
+/* input:invalid:required {
+  border: 1px solid red;
+}
+input:valid {
+  border: 2px solid black;
+} */
+.register,
+.login {
+  width: 299px;
+  height: 348px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #dfdfdf;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+.dashboard {
+  display: flex;
+  height: 100vh;
+  border-right: 1px solid #c4bbbb;
+  margin: 0 auto;
+  max-width: 990px;
+}
+.App .login {
+  height: 207px;
+}
+.login input,
+.register input {
+  margin-left: 6px;
+}
+.register-button,
+.login-button {
+  padding: 5px 27px;
+  background-color: #00c0ff;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 13px;
+  width: fit-content;
+}
+
+.register label,
+.login label {
+  display: block;
+}
+a.active {
+  color: #1e274e;
+}
+.dashboard .navbar {
+  width: 107px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 110px;
+  border-right: 1px solid #d3d3d4;
+  background-color: #f0f0fa;
+}
+.dashboard .navbar ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 26px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #a3a3a4;
+}
+.navbar ul li a {
+  display: flex;
+  column-gap: 10px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.right-side {
+  background-color: white;
+  position: relative;
+}
+.members-list {
+  margin-top: 11px;
+}
+.operations-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.members-list table {
+  text-align: left;
+  width: 100%;
+}
+.members-list table thead {
+  background-color: #98989829;
+}
+.members-list table thead tr th {
+  padding: 2px;
+  font-size: 6px;
+  font-weight: 400;
+  color: #29282899;
+}
+.members-list table tbody tr td {
+  padding: 3px;
+  font-size: 8px;
+}
+.members-list .search-box {
+  margin-bottom: 10px;
+}
+
+.search-box input {
+  width: 128px;
+  height: 18px;
+  background-color: #f0f0fa;
+  border: 1px solid #cfcaca;
+  font-size: 10px;
+  padding-left: 18px;
+}
+.edit-page,
+.add-new-member {
+  width: 300px;
+  height: 256px;
+  background-color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  border-radius: 5px;
+}
+.add-new-member {
+  height: 199px;
+}
+.add-new-plan {
+  height: 156px;
+}
+.margin-top {
+  margin-top: -10px;
+}
+.edit-icon:hover {
+  cursor: pointer;
+}
+.light-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(139 135 135 / 90%);
+  z-index: 1;
+  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+}
+
+.edit-page .close,
+.add-new-member .close {
+  color: black;
+  position: absolute;
+  right: -4px;
+  top: -5px;
+}
+
+.edit-page .close:hover,
+.add-new-member .close:hover {
+  color: red;
+}
+
+.edit-page .close:hover,
+.add-new-member .close:hover {
+  cursor: pointer;
+}
+.edit-page .edit-header,
+.add-new-member .header {
+  font-size: 12px;
+  margin-top: 1px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding: 3px;
+  border-bottom: 1px solid #8080802b;
+}
+.tabs {
+  display: flex;
+  column-gap: 5px;
+  font-size: 11px;
+}
+.tabs button {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+.tabs .tablinks {
+  padding: 2px;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.tabs button:hover {
+  background-color: #ddd;
+}
+
+.tabs button.active {
+  background-color: #ccc;
+}
+.tab1,
+.tab2,
+.tab3 {
+  margin-top: 6px;
+  padding: 12px;
+}
+.tab2 {
+  font-size: 7px;
+}
+.tab2 table,
+.tab3 table {
+  width: 100%;
+}
+.tab2 table thead,
+.tab3 table thead {
+  background-color: #e3e3e3;
+}
+.tab2 table tbody,
+.tab3 table tbody {
+  color: #5d5d53;
+}
+#plan {
+  font-size: 7px;
+  width: 100px;
+}
+.tab1 #id {
+  border: none;
+}
+.tab1 input,
+.add-new-member input {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.tabcontent {
+  font-size: 10px;
+  margin-top: 10px;
+}
+.edit-buttons,
+.add-buttons {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 21px;
+  align-items: center;
+  margin-left: 65px;
+}
+.add-buttons {
+  font-size: 12px;
+}
+
+.cancel,
+.save {
+  padding: 5px;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.save {
+  background-color: #0ac81e;
+}
+.cancel {
+  background-color: #1e274e;
+}
+.picture {
+  width: 78px;
+  height: 63px;
+  border: 1px solid #e4e1e1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 36%;
+  left: 78%;
+}
+
+/* Spinner container - center it */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%; /* Adjust height as needed */
+}
+
+/* Spinner animation */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #09f; /* Change to any color you like */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Keyframes for spinning animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.members-list .add-plan {
+  font-size: 9px;
+  background-color: gray;
+  color: white;
+  padding: 3px;
+  border-radius: 2px;
+  letter-spacing: 1px;
+}
+.barcode-container h2 {
+  display: none;
+}
+.barcode-container svg {
+  width: 100%;
+  height: 100%;
+}
+
+.barcode-container {
+  position: absolute;
+  bottom: 53px;
+  right: 17px;
+  width: 92px;
+  height: 70px;
+  text-align: center;
+}
